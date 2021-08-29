@@ -1,0 +1,52 @@
+.login-cont {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-cont .login-layout {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 230px;
+    transform: translate(-80%);
+    justify-content: space-between;
+}
+
+.login-layout .google-login-btn {
+    justify-content: space-between;
+    align-self: center;
+}
+
+.login-layout .google-login-btn .google-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.login-grad-circle1 {
+    position: absolute;
+    width: calc(420px + 25vw);
+    height: calc(420px + 25vw);
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 70%);
+    border-radius: 100%;
+    z-index: -1;
+    background: linear-gradient(104.04deg, var(--grad-1A) 0%, var(--grad-1B) 100%);
+}
+
+.login-grad-circle2 {
+    position: absolute;
+    width: calc(260px + 5vw);
+    height: calc(260px + 5vw);
+    left: 0;
+    bottom: 0;
+    transform: translate(60%, -50%);
+    border-radius: 100%;
+    z-index: -1;
+    background: linear-gradient(104.04deg, var(--grad-1A) 0%, var(--grad-1B) 100%);
+}
