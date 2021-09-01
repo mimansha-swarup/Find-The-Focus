@@ -9,6 +9,7 @@
     --primary500: #1ea5fc;
     --primary700: #037ac9;
     --secondary-color: #e5f0ff;
+    --secondary500: #D8E9FF;
     --accent-color: #8d13ec;
     --card-color: #1b1e32;
     --bg300: #1b1e32;
@@ -258,6 +259,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
+    /* font-family: 'Fira Sans', sans-serif; */
 }
 
 
