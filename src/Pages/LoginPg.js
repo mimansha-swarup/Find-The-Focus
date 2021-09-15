@@ -3,7 +3,7 @@ import '../style/login.css';
 import GoogleLogo from "../db-img/Logo/google.svg"
 // import FbLogo from "../db-img/Logo/facebook.svg"
 
-import {useState,useContext} from "react"
+import {useContext} from "react"
 import {localAuth,authProviderGoogle} from "../Config/FirebaseConfig"
 import  {signInWithPopup} from "firebase/auth";
 import { UserContext } from "../Context/UserContext";
@@ -32,7 +32,7 @@ const LoginPg = () => {
       .catch(err=>console.log(err.message))
     }
     
-    if(user?.uid) return <Redirect to="/" />
+    // if(user?.uid) return <Redirect to="/" />
 
     return ( 
         <div className="login-cont">

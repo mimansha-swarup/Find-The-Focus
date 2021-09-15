@@ -1,0 +1,112 @@
+.content-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-proj-btn {
+    justify-self: right;
+    position: absolute;
+    right: 68px;
+    top: 0
+    /* margin-right: 8px; */
+}
+
+.toggle {
+    box-sizing: border-box;
+    font-size: 0;
+    display: flex;
+    width: fit-content;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* transform: scale(.8); */
+    background: var(--bg700);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.toggle-input {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    width: 180px;
+}
+
+.toggle-input+.toggle-label {
+    margin: 0;
+    padding: .5rem 2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    background-color: inherit;
+    font-size: 1rem;
+    align-self: start;
+    font-weight: 600;
+    text-align: center;
+    transition: color .3s ease-in-out, background-color .2s ease-in-out, ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.toggle-input:hover+.toggle-label {
+    color: var(--black30);
+}
+
+.toggle-input:checked+.toggle-label {
+    background-color: var(--white-color);
+    color: var(--accent-color);
+    /* z-index: 1; */
+    border-radius: 20px;
+}
+
+.proj-card-layout {
+    display: flex;
+    width: 80%;
+    margin-top: 98px;
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding: 10px;
+    padding-bottom: 1.5rem;
+}
+
+.proj-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 116px;
+    background: var(--card-color);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 22px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.start-btn {
+    color: var(--success-color);
+    border: 3px solid var(--success-color);
+    border-radius: 8px;
+    /* position: absolute; */
+    bottom: 22px
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-content: space-between;
+}
+
+.proj-card-layout::-webkit-scrollbar {
+    width: 8px;
+    padding: 1rem;
+    /* display: none; */
+ 
+}

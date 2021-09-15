@@ -1,5 +1,6 @@
 import '../style/layout.css'
 import ftflogo from "../db-img/Logo/ftf_name.svg"
+import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return ( 
@@ -7,10 +8,10 @@ const NavBar = () => {
             <img src={ftflogo} alt="" />
 
             <ul className="headline6 light">
-                <li>Home</li>
-                <li>Project</li>
-                <li>Analytics</li>
-                <li>Profile</li>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/project" >Project</NavLink>
+                <NavLink to="/analytics" >Analytics</NavLink>
+                <NavLink to="/profile" >Profile</NavLink>
             </ul>
         </nav>
      );

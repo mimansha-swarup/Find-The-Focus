@@ -1,8 +1,11 @@
 import React from 'react';
-import LoginPg from './Pages/LoginPg';
+
 
 import {UserProvider} from './Context/UserContext'
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom"
+// import Profile from './Pages/ProfilePg';
+import {LoginPg,Profile,Projects,AddProj} from './Pages/Pages';
+
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -15,8 +18,10 @@ function App() {
           <div className="App">
         <Switch>
             {/* <Route exact path="/" component={Home} /> */}
-            {/* <Route exact path="/" component={NewProject} /> */}
-            <Route path="/" component={LoginPg} />
+            <Route exact path="/project" component={Projects} />
+            
+            <Route path="/project/add" component={AddProj} />
+            <Route path="/login" component={LoginPg} />
             
         </Switch>
           </div>

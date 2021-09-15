@@ -1,0 +1,82 @@
+.add-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+
+}
+.container-layout{
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    margin-top: 80px;
+}
+.add-input{
+    padding: 16px 20px;
+    background-color: var(--secondary500);
+    color: var(--text-sec-dark-clr);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    flex-grow: 1;
+}
+.add-row{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.add-btn{
+    background-color: var(--accent-color);
+    padding: 8px;
+    align-self: center;
+    border-radius: 10px;
+    margin-left: 11px ;
+
+}
+.milestone-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.milestone-cont p{
+    align-self: center;
+
+}
+.milestone-cont ul{
+    align-self: center;
+    flex-grow: 1;
+}
+.milestone-cont ul li{
+    margin: 10px 0;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+#dateinpt{
+    background-color: var(--card-color);
+    color: var(--white-color);
+    border-radius: 10px ;
+    padding: 8px;
+    margin-top: 16px;
+    width: 45%;
+    border: none;
+    outline: none;
+}
+#dateinpt::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.discard-btn{
+    margin-top: 24px;
+    align-self: center;
+    color: var(--error-color);
+    border-color: var(--error-color);
+
+}

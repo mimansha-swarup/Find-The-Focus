@@ -16,6 +16,7 @@
     --bg500: #101323;
     --bg700: #0c0e1c;
     --bg900: #060813;
+    --track-color:#050610;
     --text-sec-light-clr: #bbbbbb;
     --text-sec-dark-clr: #444444;
     /* Gradient */
@@ -74,73 +75,73 @@
 
 .headline1 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 6rem;
 }
 
 .headline2 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 3.75rem;
 }
 
 .headline3 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 3rem;
 }
 
 .headline4 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 2.125rem;
 }
 
 .headline5 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 1.5rem;
 }
 
 .headline6 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 1.25rem;
 }
 
 .body {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 1rem;
 }
 
 .subtitle1 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 1.25rem;
 }
 
 .subtitle2 {
     font-family: 'Fira Sans', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 0.875rem;
 }
 
 .button-txt {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 0.75rem;
 }
 
 .overline {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 0.625rem;
 }
 
 .caption {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.0015em;
+    letter-spacing: 0.15%;
     font-size: 0.75rem;
 }
 
@@ -163,6 +164,7 @@
     align-items: center;
     padding: 8px 48px;
     border-radius: 8px;
+    font-size: 16px;
 }
 
 .large {
@@ -172,6 +174,7 @@
     align-items: center;
     padding: 16px 64px;
     border-radius: 12px;
+    font-size: 20px;
 }
 
 .primary-btn {
@@ -189,11 +192,15 @@
 }
 
 .outlined-btn {
-    background-color: var(--secondary-color);
-    color: var(--primary500);
+    background-color: inherit;
+    /* color: var(--primary500);
+    border-color: var(--primary500); */
     padding: 8px 48px;
-    border: 3px solid var(--primary500);
+    border-style: solid;
+    border-width: 3px;
     cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .large-cta {
@@ -263,7 +270,7 @@ body {
 }
 
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -271,4 +278,36 @@ h5,
 p {
     margin: 0;
     padding: 0;
-} */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+ 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg900);
+    background-clip: content-box
+ 
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    width: 1px;
+    background: rgba(27, 30, 50,.50);
+}
+    
+::-webkit-scrollbar-corner {
+    
+    background: rgba(27, 30, 50,.50);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: var(--bg300);
+}
