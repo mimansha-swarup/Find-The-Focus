@@ -27,6 +27,23 @@ const Projects = () => {
                     activeState===1? 
                     <div className="content-col">
                         <p className="headline4 regular">Current Project</p>
+                        <div className="row-cont">
+                            <div style={{height:"230px",width:"430px"}}>fd</div>
+
+                            <div className="row-cont">
+                                <ul>
+                                    <li className="subtitle1 bold">Milestone</li>
+                                    <li className="subtitle2 light">Milestone 1</li>
+                                    <li className="subtitle2 light">Milestone 2</li>
+                                </ul>
+                                <ul>
+                                    <li className="subtitle1 bold">Time</li>
+                                    <li className="subtitle2 light">11H</li>
+                                    <li className="subtitle2 light">2H</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button className="outlined-button medium start-btn button-txt">Start</button>
 
                     </div>
                     :
